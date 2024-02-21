@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form  >
+        <h1>Formulaire d'inscription</h1>
+        <fieldset class="name">
+            <legend>Full Name</legend>
+            <p>
+                <label for="nom">Nom *:</label>
+                <input type="text" id="nom" name="nom" required>
+            </p>
+            <p>
+                <label for="prenom">Prénom *:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </p>
+        </fieldset>
+        <fieldset class="contact">
+            <legend>Contact</legend>
+            <p>
+                <label for="gmail">Gmail *:</label>
+                <input type="email" id="gmail" name="gmail" required>
+            </p>
+            <p>
+                <label for="telephone">Phone *:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </p>
+        </fieldset>
+        <fieldset class="login">
+            <legend>login</legend>
+            <p>
+                <label for="pwd">Password *:</label>
+                <input type="password" id="pwd" name="pwd" required>
+            </p>
+            <p>
+                <label for="confirmPwd">Confirm Password *:</label>
+                <input type="password" id="confirmPwd" name="confirmPwd" required>
+            </p>
+        </fieldset>
+        <fieldset class="genre">
+            <legend>Genre</legend>
+            <p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" class="radio">Male</label>
+            </p>
+            
+            <p>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" class="radio">Female</label>
+            </p>
+
+            <p>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" class="radio">Other</label>
+            </p>
+        </fieldset>
+        <fieldset class="inscription">
+            <input type="checkbox" required name="inscription" id="inscription" value="yes">
+            <label for="inscription">J'accepte Tous les conditions</label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
